@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/movie.css">
+  <link rel="icon" href="../assets/images/header-logo.png">
+  <script src="../js/header.js"></script>
+  <script type="text/javascript" src="../jquery/jquery-3.6.0.min.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <header>
+  <header id="header">
     <div class="wrapper header-wrapper">
       <div class="heads header-start">
         <a href="#" target="_blank" >
@@ -19,7 +23,7 @@
       <div class="heads hedder-middle">
         <nav class="nav">
           <button class="nav-toggle" area-expanded="false" type="button">menu</button>
-          <ul class="menu-group">
+          <ul class="menu-group" id="g-navi">
             <li class="menu-item"><a href="#">私たちについて</a>
               <span>ABOUT US</span>
             </li>
@@ -40,5 +44,34 @@
       </div>
     </div>
   </header>
+  <div class="wrapper movie-wrapper">
+    <div class="moviemozi">
+      <p class="p-underline">薬に安心と真心を添えて。</p><br>
+      <p class="p-underline">地域の健康を支える、</p><br>
+      <p class="p-underline">薬屋さんの原点へ。</p>
+    </div>
+    <div id="video-area">
+      <video id="video" poster="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+        <!--
+            poster：動画ファイルが利用できない環境で代替表示される画像
+            webkit-playsinline：iOS 9までのSafari用インライン再生指定
+            playsinline：iOS 10以降のSafari用インライン再生指定
+            muted：音声をミュートさせる
+            autoplay：動画を自動再生させる
+            loop：動画をループさせる
+            controls：コントロールバーを表示する
+        -->
+      <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.mp4" type="video/mp4">
+      <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.ogv" type="video/ogv">
+      <source src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-3-1/video/movie.webm" type="video/webm">
+      <p>動画を再生できる環境ではありません。</p>
+      </video>
+        <!--/video-area-->
+    </div>
+  </div>
+  <div id="container">
+  <p>ここにコンテンツが入ります</p>
+  <!--/container--></div>
+<script src="../js/header.js"></script>
 </body>
 </html>
