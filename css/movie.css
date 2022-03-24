@@ -65,3 +65,31 @@
   padding: 300px 0;
   text-align: center;
 }
+
+.banner1 {
+  width: 26vw;
+  position: absolute;
+  /*要素を天地中央寄せ*/
+  top: 80%;
+  left: 85%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.banner2 {
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  width: 30vw;
+  height: 5vh;
+  /*要素の配置*/
+  position: absolute;
+  /*要素を天地中央寄せ*/
+  top: 94%;
+  left: 86%;
+  transform: translateY(-50%) translateX(-50%);
+  /*見た目の調整*/
+  color: #00a2e5;
+  background: #fff;
+  text-align: center;
+  line-height: 5vh;
+  border-radius: 20px 0px 0px 20px;
+}
